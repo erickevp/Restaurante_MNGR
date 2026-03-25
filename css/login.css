@@ -1,0 +1,54 @@
+.login-wrapper {
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+.logo-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #6366f1 100%);
+}
+
+.form-floating > .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(79, 70, 229, 0.25);
+}
+
+/* Efectos de fondo abstracto */
+.login-wrapper::before, .login-wrapper::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.login-wrapper::before {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(#4f46e5 0%, transparent 60%);
+    top: -100px;
+    left: -100px;
+    opacity: 0.1;
+}
+
+.login-wrapper::after {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(#10b981 0%, transparent 60%);
+    bottom: -150px;
+    right: -100px;
+    opacity: 0.1;
+}

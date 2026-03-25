@@ -1,0 +1,70 @@
+/* optmized for tablets / touch interfaces */
+body {
+    background-color: #f8f9fa;
+    font-size: 1.1rem; /* Bigger text */
+}
+
+/* Touch friendly buttons */
+.btn-touch {
+    padding: 1.2rem;
+    font-size: 1.25rem;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+/* Table grid cards */
+.table-card {
+    border-radius: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.table-card:active {
+    transform: scale(0.97);
+}
+
+.table-card.disponible { background-color: #e8f5e9; border-left: 6px solid #28a745; }
+.table-card.ocupada { background-color: #fff3cd; border-left: 6px solid #ffc107; }
+.table-card.mantenimiento { background-color: #f8d7da; border-left: 6px solid #dc3545; }
+
+/* Fixed bottom bar for orders */
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: 0 -4px 15px rgba(0,0,0,0.1);
+    padding: 15px 20px;
+    z-index: 1000;
+}
+
+/* Bigger inputs */
+.form-control-touch {
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+/* Menu items */
+.menu-item-touch {
+    border-radius: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+.menu-item-touch:active {
+    background-color: #f1f3f5 !important;
+}
+
+.qty-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
