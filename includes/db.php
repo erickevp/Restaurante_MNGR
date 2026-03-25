@@ -7,8 +7,8 @@
 
 $host = 'localhost';
 $db   = 'restaurante_db';
-$user = 'internet';
-$pass = 'Aidee2Alonso2024$';
+$user = 'user';
+$pass = 'password';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
